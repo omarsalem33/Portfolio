@@ -1,157 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Omar Salem — Backend Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omar Salem — Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CUSTOM CURSOR -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
 
-<!-- CUSTOM CURSOR -->
-<div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
-
-<!-- LOADER -->
-<div id="loader">
-  <div class="loader-initials">OS</div>
-  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-  <div class="loader-txt">Loading Portfolio</div>
-</div>
-
-<!-- PARTICLE CANVAS -->
-<canvas id="particle-canvas"></canvas>
-
-<!-- NAVBAR -->
-<nav id="navbar">
-  <div class="nav-logo">Omar Salem</div>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#hero" onclick="closeMenu()">Home</a></li>
-    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-    <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
-    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-    <li><a href="#education" onclick="closeMenu()">Education</a></li>
-    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-  </ul>
-  <div class="nav-burger" id="navBurger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="availability-tag reveal">
-        <span class="availability-dot"></span>
-        Available for opportunities
-      </div>
-      <h1 class="hero-name reveal">Omar<br>Salem</h1>
-      <p class="hero-subtitle reveal">
-        <span>Backend Developer</span> · ASP.NET Core &amp; C# specialist. <br>
-        Building scalable systems and teaching the next generation of developers from Ismailia, Egypt.
-      </p>
-      <div class="hero-cta reveal">
-        <a href="#contact" class="btn btn-primary">Get in Touch ↗</a>
-        <a href="#projects" class="btn btn-outline">View Projects</a>
-      </div>
+    <!-- LOADER -->
+    <div id="loader">
+      <div class="loader-initials">OS</div>
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+      <div class="loader-txt">Loading Portfolio</div>
     </div>
-    <div class="hero-right reveal-right">
-      <div class="card-wrap">
-        <div class="spinning-ring"></div>
-        <div class="spinning-ring spinning-ring-2"></div>
-        <div class="glow-orb"></div>
-        <div class="float-card">
-          <div class="card-avatar">OS</div>
-          <div class="card-name">Omar Salem</div>
-          <div class="card-role">Backend Developer</div>
-          <div class="card-divider"></div>
-          <div class="card-stats">
-            <div class="card-stat">
-              <div class="card-stat-num">2+</div>
-              <div class="card-stat-label">Years Exp</div>
-            </div>
-            <div class="card-stat">
-              <div class="card-stat-num">3</div>
-              <div class="card-stat-label">Projects</div>
-            </div>
-            <div class="card-stat">
-              <div class="card-stat-num">6th</div>
-              <div class="card-stat-label">ICPC Place</div>
+
+    <!-- PARTICLE CANVAS -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-logo">Omar Salem</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" onclick="closeMenu()">Home</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#education" onclick="closeMenu()">Education</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+      <div class="nav-burger" id="navBurger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="availability-tag reveal">
+            <span class="availability-dot"></span>
+            Available for opportunities
+          </div>
+          <h1 class="hero-name reveal">Omar<br />Salem</h1>
+          <p class="hero-subtitle reveal">
+            <span>Backend Developer</span> · ASP.NET Core &amp; C# specialist.
+            <br />
+            Building scalable systems and teaching the next generation of
+            developers from Ismailia, Egypt.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#contact" class="btn btn-primary">Get in Touch ↗</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+        </div>
+        <div class="hero-right reveal-right">
+          <div class="card-wrap">
+            <div class="spinning-ring"></div>
+            <div class="spinning-ring spinning-ring-2"></div>
+            <div class="glow-orb"></div>
+            <div class="float-card">
+              <div class="card-avatar">OS</div>
+              <div class="card-name">Omar Salem</div>
+              <div class="card-role">Backend Developer</div>
+              <div class="card-divider"></div>
+              <div class="card-stats">
+                <div class="card-stat">
+                  <div class="card-stat-num">2+</div>
+                  <div class="card-stat-label">Years Exp</div>
+                </div>
+                <div class="card-stat">
+                  <div class="card-stat-num">3</div>
+                  <div class="card-stat-label">Projects</div>
+                </div>
+                <div class="card-stat">
+                  <div class="card-stat-num">6th</div>
+                  <div class="card-stat-label">ICPC Place</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="marqueeTrack"></div>
     </div>
-  </div>
-</section>
 
-<!-- MARQUEE -->
-<div class="marquee-wrap">
-  <div class="marquee-track" id="marqueeTrack"></div>
-</div>
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-label">Expertise</div>
+      <h2 class="section-title reveal">
+        Technical
+        <span
+          style="
+            background: linear-gradient(135deg, var(--pink), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+          >Skills</span
+        >
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-bars-col" id="skillBars"></div>
+        <div class="chips-col reveal-right">
+          <div class="chips-title">Technologies &amp; Tools</div>
+          <div class="chips-cloud" id="chipsCloud"></div>
+        </div>
+      </div>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-label">Expertise</div>
-  <h2 class="section-title reveal">Technical <span style="background:linear-gradient(135deg,var(--pink),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Skills</span></h2>
-  <div class="skills-grid">
-    <div class="skill-bars-col" id="skillBars"></div>
-    <div class="chips-col reveal-right">
-      <div class="chips-title">Technologies &amp; Tools</div>
-      <div class="chips-cloud" id="chipsCloud"></div>
-    </div>
-  </div>
-</section>
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-label">Career</div>
+      <h2 class="section-title reveal">
+        Work
+        <span
+          style="
+            background: linear-gradient(
+              135deg,
+              var(--indigo-light),
+              var(--amber)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+          >Experience</span
+        >
+      </h2>
+      <div class="timeline" id="timeline"></div>
+    </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-label">Career</div>
-  <h2 class="section-title reveal">Work <span style="background:linear-gradient(135deg,var(--indigo-light),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Experience</span></h2>
-  <div class="timeline" id="timeline"></div>
-</section>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-label">Work</div>
+      <h2 class="section-title reveal">
+        Featured
+        <span
+          style="
+            background: linear-gradient(135deg, var(--cyan), var(--pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+          >Projects</span
+        >
+      </h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-label">Work</div>
-  <h2 class="section-title reveal">Featured <span style="background:linear-gradient(135deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Projects</span></h2>
-  <div class="projects-grid" id="projectsGrid"></div>
-</section>
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="section-label">Academic</div>
+      <h2 class="section-title reveal">
+        Education &amp;
+        <span
+          style="
+            background: linear-gradient(
+              135deg,
+              var(--amber),
+              var(--indigo-light)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+          >Languages</span
+        >
+      </h2>
+      <div class="edu-lang-grid">
+        <div class="edu-cards reveal-left" id="eduCards"></div>
+        <div class="lang-section reveal-right" id="langSection"></div>
+      </div>
+    </section>
 
-<!-- EDUCATION -->
-<section id="education">
-  <div class="section-label">Academic</div>
-  <h2 class="section-title reveal">Education &amp; <span style="background:linear-gradient(135deg,var(--amber),var(--indigo-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Languages</span></h2>
-  <div class="edu-lang-grid">
-    <div class="edu-cards reveal-left" id="eduCards"></div>
-    <div class="lang-section reveal-right" id="langSection"></div>
-  </div>
-</section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-label">Let's connect</div>
+      <h2 class="section-title reveal">
+        Get In
+        <span
+          style="
+            background: linear-gradient(135deg, var(--pink), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+          >Touch</span
+        >
+      </h2>
+      <div class="contact-grid">
+        <div class="contact-cards reveal-left" id="contactCards"></div>
+        <div class="contact-avatar-wrap reveal-right">
+          <div class="ripple-ring"></div>
+          <div class="ripple-ring"></div>
+          <div class="ripple-ring"></div>
+          <div class="contact-avatar">OS</div>
+        </div>
+      </div>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-label">Let's connect</div>
-  <h2 class="section-title reveal">Get In <span style="background:linear-gradient(135deg,var(--pink),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Touch</span></h2>
-  <div class="contact-grid">
-    <div class="contact-cards reveal-left" id="contactCards"></div>
-    <div class="contact-avatar-wrap reveal-right">
-      <div class="ripple-ring"></div>
-      <div class="ripple-ring"></div>
-      <div class="ripple-ring"></div>
-      <div class="contact-avatar">OS</div>
-    </div>
-  </div>
-</section>
+    <!-- FOOTER -->
+    <footer>
+      <span>© 2025 Omar Salem · Built with passion</span>
+      <span
+        >omarsalem33 ·
+        <a href="https://github.com/omarsalem33" target="_blank">GitHub</a> ·
+        <a href="https://linkedin.com/in/omarsalem33/" target="_blank"
+          >LinkedIn</a
+        ></span
+      >
+    </footer>
 
-<!-- FOOTER -->
-<footer>
-  <span>© 2025 Omar Salem · Built with passion</span>
-  <span>omarsalem33 · <a href="https://github.com/omarsalem33" target="_blank">GitHub</a> · <a href="https://linkedin.com/in/omarsalem33/" target="_blank">LinkedIn</a></span>
-</footer>
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
