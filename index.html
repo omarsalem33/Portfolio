@@ -1,138 +1,78 @@
 <!doctype html>
 <html lang="en">
-<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
   <title>Omar Salem — Backend Developer</title>
+  <meta name="description"
+    content="Portfolio of Omar Salem — Backend Developer specialising in ASP.NET Core, C# and SQL Server, and programming instructor based in Ismailia, Egypt." />
+  <meta name="theme-color" content="#050510" />
+  <link rel="canonical" href="https://omarsalem33.github.io/Portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Omar Salem — Backend Developer" />
+  <meta property="og:description"
+    content="ASP.NET Core &amp; C# specialist building scalable systems and teaching the next generation of developers." />
+  <meta property="og:url" content="https://omarsalem33.github.io/Portfolio/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <noscript>
+    <link rel="stylesheet" href="noscript.css" />
+  </noscript>
+  <script src="main.js" defer></script>
 </head>
 
 <body>
-  <!-- CUSTOM CURSOR -->
-  <div id="cursor-dot"></div>
-  <div id="cursor-ring"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <noscript>
+    <p class="noscript-msg">
+      Please enable JavaScript to view skills, experience and projects.
+    </p>
+  </noscript>
+
+  <!-- CUSTOM CURSOR (decorative) -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
 
   <!-- LOADER -->
-  <div id="loader">
-    <div class="loader-initials">OS</div>
-    <div class="loader-bar-wrap">
+  <div id="loader" role="status" aria-live="polite">
+    <div class="loader-initials" aria-hidden="true">OS</div>
+    <div class="loader-bar-wrap" aria-hidden="true">
       <div class="loader-bar"></div>
     </div>
     <div class="loader-txt">Loading Portfolio</div>
   </div>
 
-  <!-- PARTICLE CANVAS -->
-  <canvas id="particle-canvas"></canvas>
+  <!-- PARTICLE CANVAS (decorative) -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
 
   <!-- NAVBAR -->
-  <nav id="navbar">
+  <nav id="navbar" aria-label="Primary">
     <div class="nav-logo">Omar Salem</div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#hero" onclick="closeMenu()">Home</a></li>
-      <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-      <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
-      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-      <li><a href="#education" onclick="closeMenu()">Education</a></li>
-      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="nav-burger" id="navBurger" onclick="toggleMenu()">
+    <button type="button" class="nav-burger" id="navBurger" aria-label="Toggle navigation menu" aria-controls="navLinks"
+      aria-expanded="false">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </nav>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <div class="availability-tag reveal">
-          <span class="availability-dot"></span>
-          Available for opportunities
-        </div>
-        <h1 class="hero-name reveal">Omar<br />Salem</h1>
-        <p class="hero-subtitle reveal">
-          <span>Backend Developer</span> · ASP.NET Core &amp; C# specialist.
-          <br />
-          Building scalable systems and teaching the next generation of
-          developers from Ismailia, Egypt.
-        </p>
-        <div class="hero-cta reveal">
-          <a href="#contact" class="btn btn-primary">Get in Touch ↗</a>
-          <a href="#projects" class="btn btn-outline">View Projects</a>
-        </div>
-      </div>
-      <div class="hero-right reveal-right">
-        <div class="card-wrap">
-          <div class="spinning-ring"></div>
-          <div class="spinning-ring spinning-ring-2"></div>
-          <div class="glow-orb"></div>
-          <div class="float-card">
-            <div class="card-avatar">OS</div>
-            <div class="card-name">Omar Salem</div>
-            <div class="card-role">Backend Developer</div>
-            <div class="card-divider"></div>
-            <div class="card-stats">
-              <div class="card-stat">
-                <div class="card-stat-num">2+</div>
-                <div class="card-stat-label">Years Exp</div>
-              </div>
-              <div class="card-stat">
-                <div class="card-stat-num">3</div>
-                <div class="card-stat-label">Projects</div>
-              </div>
-              <div class="card-stat">
-                <div class="card-stat-num">6th</div>
-                <div class="card-stat-label">ICPC Place</div>
-=======
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omar Salem — Backend Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- CUSTOM CURSOR -->
-    <div id="cursor-dot"></div>
-    <div id="cursor-ring"></div>
-
-    <!-- LOADER -->
-    <div id="loader">
-      <div class="loader-initials">OS</div>
-      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-      <div class="loader-txt">Loading Portfolio</div>
-    </div>
-
-    <!-- PARTICLE CANVAS -->
-    <canvas id="particle-canvas"></canvas>
-
-    <!-- NAVBAR -->
-    <nav id="navbar">
-      <div class="nav-logo">Omar Salem</div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#hero" onclick="closeMenu()">Home</a></li>
-        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-        <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-        <li><a href="#education" onclick="closeMenu()">Education</a></li>
-        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-      </ul>
-      <div class="nav-burger" id="navBurger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
-
+  <main id="main">
     <!-- HERO -->
     <section id="hero">
       <div class="hero-inner">
@@ -153,7 +93,7 @@
             <a href="#projects" class="btn btn-outline">View Projects</a>
           </div>
         </div>
-        <div class="hero-right reveal-right">
+        <div class="hero-right reveal-right" aria-hidden="true">
           <div class="card-wrap">
             <div class="spinning-ring"></div>
             <div class="spinning-ring spinning-ring-2"></div>
@@ -176,7 +116,6 @@
                   <div class="card-stat-num">6th</div>
                   <div class="card-stat-label">ICPC Place</div>
                 </div>
->>>>>>> 64136b081a5445cd9cfb2c0f9067780db34a2831
               </div>
             </div>
           </div>
@@ -184,140 +123,16 @@
       </div>
     </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee-wrap">
+    <!-- MARQUEE (decorative, repeated content) -->
+    <div class="marquee-wrap" aria-hidden="true">
       <div class="marquee-track" id="marqueeTrack"></div>
     </div>
-<<<<<<< HEAD
-  </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee-track" id="marqueeTrack"></div>
-  </div>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="section-label">Expertise</div>
-    <h2 class="section-title reveal">
-      Technical
-      <span style="
-            background: linear-gradient(135deg, var(--pink), var(--cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          ">Skills</span>
-    </h2>
-    <div class="skills-grid">
-      <div class="skill-bars-col" id="skillBars"></div>
-      <div class="chips-col reveal-right">
-        <div class="chips-title">Technologies &amp; Tools</div>
-        <div class="chips-cloud" id="chipsCloud"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="section-label">Career</div>
-    <h2 class="section-title reveal">
-      Work
-      <span style="
-            background: linear-gradient(
-              135deg,
-              var(--indigo-light),
-              var(--amber)
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          ">Experience</span>
-    </h2>
-    <div class="timeline" id="timeline"></div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-label">Work</div>
-    <h2 class="section-title reveal">
-      Featured
-      <span style="
-            background: linear-gradient(135deg, var(--cyan), var(--pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          ">Projects</span>
-    </h2>
-    <div class="projects-grid" id="projectsGrid"></div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="section-label">Academic</div>
-    <h2 class="section-title reveal">
-      Education &amp;
-      <span style="
-            background: linear-gradient(
-              135deg,
-              var(--amber),
-              var(--indigo-light)
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          ">Languages</span>
-    </h2>
-    <div class="edu-lang-grid">
-      <div class="edu-cards reveal-left" id="eduCards"></div>
-      <div class="lang-section reveal-right" id="langSection"></div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-label">Let's connect</div>
-    <h2 class="section-title reveal">
-      Get In
-      <span style="
-            background: linear-gradient(135deg, var(--pink), var(--cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          ">Touch</span>
-    </h2>
-    <div class="contact-grid">
-      <div class="contact-cards reveal-left" id="contactCards"></div>
-      <div class="contact-avatar-wrap reveal-right">
-        <div class="ripple-ring"></div>
-        <div class="ripple-ring"></div>
-        <div class="ripple-ring"></div>
-        <div class="contact-avatar">OS</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <span>© 2025 Omar Salem · Built with passion</span>
-    <span>omarsalem33 ·
-      <a href="https://github.com/omarsalem33" target="_blank">GitHub</a> ·
-      <a href="https://linkedin.com/in/omarsalem33/" target="_blank">LinkedIn</a></span>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-
-</html>
-=======
 
     <!-- SKILLS -->
     <section id="skills">
       <div class="section-label">Expertise</div>
       <h2 class="section-title reveal">
-        Technical
-        <span
-          style="
-            background: linear-gradient(135deg, var(--pink), var(--cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          "
-          >Skills</span
-        >
+        Technical <span class="grad-text grad-pink-cyan">Skills</span>
       </h2>
       <div class="skills-grid">
         <div class="skill-bars-col" id="skillBars"></div>
@@ -332,19 +147,7 @@
     <section id="experience">
       <div class="section-label">Career</div>
       <h2 class="section-title reveal">
-        Work
-        <span
-          style="
-            background: linear-gradient(
-              135deg,
-              var(--indigo-light),
-              var(--amber)
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          "
-          >Experience</span
-        >
+        Work <span class="grad-text grad-indigo-amber">Experience</span>
       </h2>
       <div class="timeline" id="timeline"></div>
     </section>
@@ -353,15 +156,7 @@
     <section id="projects">
       <div class="section-label">Work</div>
       <h2 class="section-title reveal">
-        Featured
-        <span
-          style="
-            background: linear-gradient(135deg, var(--cyan), var(--pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          "
-          >Projects</span
-        >
+        Featured <span class="grad-text grad-cyan-pink">Projects</span>
       </h2>
       <div class="projects-grid" id="projectsGrid"></div>
     </section>
@@ -371,18 +166,7 @@
       <div class="section-label">Academic</div>
       <h2 class="section-title reveal">
         Education &amp;
-        <span
-          style="
-            background: linear-gradient(
-              135deg,
-              var(--amber),
-              var(--indigo-light)
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          "
-          >Languages</span
-        >
+        <span class="grad-text grad-amber-indigo">Languages</span>
       </h2>
       <div class="edu-lang-grid">
         <div class="edu-cards reveal-left" id="eduCards"></div>
@@ -394,19 +178,11 @@
     <section id="contact">
       <div class="section-label">Let's connect</div>
       <h2 class="section-title reveal">
-        Get In
-        <span
-          style="
-            background: linear-gradient(135deg, var(--pink), var(--cyan));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          "
-          >Touch</span
-        >
+        Get In <span class="grad-text grad-pink-cyan">Touch</span>
       </h2>
       <div class="contact-grid">
         <div class="contact-cards reveal-left" id="contactCards"></div>
-        <div class="contact-avatar-wrap reveal-right">
+        <div class="contact-avatar-wrap reveal-right" aria-hidden="true">
           <div class="ripple-ring"></div>
           <div class="ripple-ring"></div>
           <div class="ripple-ring"></div>
@@ -414,20 +190,18 @@
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer>
-      <span>© 2025 Omar Salem · Built with passion</span>
-      <span
-        >omarsalem33 ·
-        <a href="https://github.com/omarsalem33" target="_blank">GitHub</a> ·
-        <a href="https://linkedin.com/in/omarsalem33/" target="_blank"
-          >LinkedIn</a
-        ></span
-      >
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <span>© <span id="year">2026</span> Omar Salem · Built with passion</span>
+    <span>
+      omarsalem33 ·
+      <a href="https://github.com/omarsalem33" target="_blank" rel="noopener noreferrer">GitHub</a>
+      ·
+      <a href="https://linkedin.com/in/omarsalem33/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </span>
+  </footer>
+</body>
 
-    <script src="main.js"></script>
-  </body>
 </html>
->>>>>>> 64136b081a5445cd9cfb2c0f9067780db34a2831

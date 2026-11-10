@@ -1,0 +1,26 @@
+/* Loaded only when JavaScript is disabled (see <noscript> in index.html) */
+#loader,
+#cursor-dot,
+#cursor-ring,
+#particle-canvas {
+  display: none;
+}
+nav {
+  transform: none;
+}
+.reveal,
+.reveal-left,
+.reveal-right {
+  opacity: 1;
+  transform: none;
+}
+.noscript-msg {
+  position: relative;
+  z-index: 1;
+  margin: 100px 5% 0;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text-muted);
+}
